@@ -1,0 +1,237 @@
+<html>
+    <head>
+        <title>Welcome to Digiopilis</title>
+        <style> 
+            body {
+                margin: 0px;
+                padding: 0px;
+                color: rgb(255, 255, 255);
+                font-family: sans-serif;
+            }
+            #container {
+                background: rgb(138, 187, 228);
+                background-image: url('Background Forest.jpg');
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: 100% 100%;
+                width: 960px;
+                height: 540px; 
+                padding: 50px;
+                box-sizing: border-box;
+            }
+            *, *:before, *:after {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+            #Generative-Forest{
+                width: 400px;
+                height: 300px;
+                position: relative;
+                Top:-125px;
+                Left:245px;
+            }
+            #Robert {
+                width: 400px;
+                height: 300px;
+                margin: -122px 35px;
+                position: relative;
+                right: 100px;
+            }
+            #Digikitty {
+                width: 400px;
+                height: 300px;
+                margin: 0px 0px;
+                position: relative;
+                left: 500px;
+                top: -468px;
+            }
+            .chat-box {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, 110%);
+                background: rgba(255, 255, 255, 0.8); /* White box with transparency */
+                border: 2px solid #640404;
+                border-radius: 20px;
+                width: 70%;
+                padding: 20px 100px;
+                font-size: 18px;
+                color: #333;
+                box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            }
+            .chat-box::before {
+                content: '';
+                position: absolute;
+                bottom: -15px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 30px;
+                height: 30px;
+                background: rgba(255, 255, 255, 0.8);
+                border-left: 2px solid #640404;
+                border-bottom: 2px solid #640404;
+                transform: rotate(45deg) translateX(-50%);
+            }
+
+            *, *:before, *:after {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+                }
+
+                .buttons {
+                margin-top: 50px;
+                text-align: center;
+                border-radius: 30px;
+                }
+
+                .blob-btn {
+                z-index: 1;
+                position: relative;
+                padding: 20px 46px;
+                text-align: center;
+                text-transform: uppercase;
+                color: #046424;
+                font-size: 16px;
+                font-weight: bold;
+                background-color: transparent;
+                outline: none;
+                border: none;
+                transition: color 0.5s;
+                cursor: pointer;
+                border-radius: 30px;
+                margin: -125px 0px;
+                left: 400px;
+                Top:-300px;
+                }
+
+                .blob-btn:before {
+                content: "";
+                z-index: 1;
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                border: 2px solid #046424;
+                border-radius: 30px;
+                }
+
+                .blob-btn:after {
+                content: "";
+                z-index: -2;
+                position: absolute;
+                left: 3px;
+                top: 3px;
+                width: 100%;
+                height: 100%;
+                transition: all 0.3s 0.2s;
+                border-radius: 30px;
+                }
+
+                .blob-btn:hover {
+                color: #fdfdfd;
+                }
+
+                .blob-btn:hover:after {
+                transition: all 0.3s;
+                left: 0;
+                top: 0;
+                border-radius: 30px;
+                }
+
+                .blob-btn__inner {
+                z-index: -1;
+                overflow: hidden;
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                border-radius: 30px;
+                background: #cff6d3;
+                }
+
+                .blob-btn__blobs {
+                position: relative;
+                display: block;
+                height: 100%;
+                filter: url('#goo');
+                }
+
+                .blob-btn__blob {
+                position: absolute;
+                top: 2px;
+                width: 25%;
+                height: 100%;
+                background: #046424;
+                border-radius: 100%;
+                transform: translate3d(0, 150%, 0) scale(1.7);
+                transition: transform 0.45s;
+                }
+
+                .blob-btn__blob:nth-child(1) {
+                left: 0;
+                transition-delay: 0s;
+                }
+
+                .blob-btn__blob:nth-child(2) {
+                left: 25%;
+                transition-delay: 0.08s;
+                }
+
+                .blob-btn__blob:nth-child(3) {
+                left: 50%;
+                transition-delay: 0.16s;
+                }
+
+                .blob-btn__blob:nth-child(4) {
+                left: 75%;
+                transition-delay: 0.24s;
+                }
+
+                .blob-btn:hover .blob-btn__blob {
+                transform: translateZ(0) scale(1.7);
+                }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <img id="Generative-Forest" src="Header.png"/>
+            <img id="Robert" src="Robert Happy.png"/>
+            
+            <div class="chat-box">
+                <p>
+                    Ah, Generative AI is a special type of AI that creates new content, like text, images, or music, instead of just processing existing data. For example, it can combine features of a cat and dog to imagine a unique creature.
+            </div>
+
+            <a href="Page 1.5.html"> 
+                <div class="buttons">
+                    <button class="blob-btn">
+                        NEXT
+                        <span class="blob-btn__inner">
+                            <span class="blob-btn__blobs">
+                                <span class="blob-btn__blob"></span>
+                                <span class="blob-btn__blob"></span>
+                                <span class="blob-btn__blob"></span>
+                                <span class="blob-btn__blob"></span>
+                            </span>
+                        </span>
+                    </button>
+                    <br/>
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                        <defs>
+                            <filter id="goo">
+                                <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10"></feGaussianBlur>
+                                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 21 -7" result="goo"></feColorMatrix>
+                                <feBlend in2="goo" in="SourceGraphic" result="mix"></feBlend>
+                            </filter>
+                        </defs>
+                    </svg>
+                </div>
+            </a>
+            <img id="Digikitty" src="Digikitty Happy.png"/>
+        </div>
+    </body>
+</html>
